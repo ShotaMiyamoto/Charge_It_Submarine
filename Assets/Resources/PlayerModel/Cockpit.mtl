@@ -1,0 +1,24 @@
+newmtl Player_Sphere
+Kd 1 1 1
+d 0.5019608
+
+newmtl Player_Body
+Kd 0.02950339 0.1081097 0.1603774
+d 1
+
+newmtl Player_Cylinder
+Kd 1 1 1
+d 1
+
+newmtl Player_Light
+Kd 1 0.9966348 0.3254717
+d 0.8
+
+newmtl Player_Jet
+Kd 0.9716981 0.9238366 0.1420879
+d 1
+
+newmtl Player_Pattern
+Kd 0.1003471 0.287966 0.3867925
+d 1
+
