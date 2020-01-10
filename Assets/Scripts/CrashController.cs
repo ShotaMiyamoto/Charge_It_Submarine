@@ -22,9 +22,9 @@ public class CrashController : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
-            Debug.Log("Crashed");
-            Debug.Log(other.contacts[0].point);
-            Debug.Log(other.gameObject.GetComponent<Rigidbody>().velocity);
+            //Debug.Log("Crashed");
+            //Debug.Log(other.contacts[0].point);
+            //Debug.Log(other.gameObject.GetComponent<Rigidbody>().velocity);
             if (gameObject.transform.parent != null)
             {
                 gameObject.transform.parent = null;
