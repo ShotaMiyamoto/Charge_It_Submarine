@@ -5,14 +5,10 @@ using DG.Tweening;
 
 public class ObstacleController : MonoBehaviour
 {
-    private Vector3 vanishForce = new Vector3();
-    Sequence sequence;
-
-    //private float deadLine = -10; //消滅位置
+    
     void Start()
     {
-        vanishForce = new Vector3(0, 0, 200f);
-        sequence = DOTween.Sequence();
+        
     }
 
 
@@ -25,12 +21,11 @@ public class ObstacleController : MonoBehaviour
 		}*/
     }
 
-    void OnCollisionEnter(Collision other)
+    void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.tag == "Player")
         {
-            sequence.Append(this.transform.DOMove(this.gameObject.transform.position + vanishForce, 1.5f));
-            sequence.Join(this.transform.DOLocalRotate(new Vector3(0, 0, -1080f), 1.5f, RotateMode.FastBeyond360).SetRelative());
+            this.GetComponent<Renderer>().material.color = Color.black;
         }
     }
 }

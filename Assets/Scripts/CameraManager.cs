@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraManager : MonoBehaviour {
 
-	[SerializeField] private GameObject Player;
+	//[SerializeField] private GameObject Player;
 
 	// Use this for initialization
 	void Start () {
@@ -13,6 +13,6 @@ public class CameraManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		this.transform.position = Player.transform.position + new Vector3(0,3,-15);
+		//this.transform.position = Player.transform.position + new Vector3(0,3,-15);
 	}
 }
